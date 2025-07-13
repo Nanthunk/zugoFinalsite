@@ -1,0 +1,208 @@
+/* ====== Services page styles ====== */
+html, body {
+  overflow-x: hidden;
+}
+
+.services-page {
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  color: #333;
+}
+
+/* Intro hero section */
+
+  .services-hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: #f9fafc;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-sizing: border-box; /* makes padding not add to width */
+  overflow-x: hidden; 
+}
+
+.services-hero h1 {
+  color: #007acc;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.services-hero p {
+  font-size: 16px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Service cards grid */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 80px;
+  margin: 40px auto;
+  
+
+}
+
+.service-card {
+  background: #58e5c9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 16px;
+  transition: transform 0.3s;
+  text-align: left;
+  min-height: 350px;
+
+}
+
+
+
+.service-card:hover {
+  transform: translateY(-5px);
+     
+  
+
+}
+
+.service-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.service-card h2 {
+  color: #007acc;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.service-card p {
+  font-size: 14px;
+  margin: 0;
+  text-align: justify;
+}
+
+
+
+.cards{
+  background: #58e5c9;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 16px;
+  transition: transform 0.3s;
+  text-align: left;
+  min-height: 350px;
+  width: 250px;
+   /* width: 300px; */
+  margin:  auto; /* centers the card horizontally */
+ justify-content: center;
+}
+
+
+.cards:hover {
+  transform: translateY(-5px);
+}
+
+.cards img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.cards h2 {
+  color: #007acc;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.cards p {
+  font-size: 14px;
+  margin: 0;
+  text-align: justify;
+}
+
+
+
+
+/* Expertise section */
+.expertise {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.expertise h2 {
+  color: #007acc;
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.expertise ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.expertise ul li {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Call to action banner */
+.cta-banner {
+  background: #007acc;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta-banner h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cta-banner p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: white;
+  color: #007acc;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+  background: #005f99;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  @media (max-width: 768px) {
+  .services-hero {
+    background-attachment: scroll;
+  }
+}
+
+  .services-hero h1 { font-size: 26px; }
+  .services-hero p { font-size: 14px; }
+  .service-card h2 { font-size: 18px; }
+  .cta-banner h2 { font-size: 20px; }
+  .cta-banner p { font-size: 14px; }
+}
+
+

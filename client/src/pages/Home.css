@@ -1,0 +1,203 @@
+/* ====== Home page custom CSS ====== */
+
+/* General */
+.home {
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+/* ========== HERO SECTION ========== */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;                /* Full screen height */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax-like effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin: 0;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin: 12px 0 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007acc;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #005f99;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== INTRO SECTION ========== */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.intro h2 {
+  font-size: 28px;
+  color: #007acc;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 16px;
+}
+
+/* ========== SERVICES SECTION ========== */
+.services {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 28px;
+  color: #007acc;
+  margin-bottom: 30px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  /* border: 2px solid red; */
+  border-radius: 8px;
+  width: 260px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  margin: auto;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.service-card h3 {
+  color: #007acc;
+  margin: 10px 0 5px;
+}
+
+.service-card p {
+  font-size: 14px;
+}
+
+
+/* ========== VALUES SECTION ========== */
+.values {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.values-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.values-content img {
+  width: 400px;
+  border-radius: 8px;
+}
+
+.values-content div {
+  flex: 1;
+}
+
+.values h2 {
+  color: #007acc;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.values ul li {
+  margin: 6px 0;
+}
+
+/* ========== CONTACT CTA SECTION ========== */
+.contact-cta {
+  background: #007acc;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-cta h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .hero-text h1 { font-size: 28px; }
+  .hero-text p { font-size: 14px; }
+  .cta-btn { font-size: 14px; padding: 10px 20px; }
+  .service-card { width: 90%; }
+  .values-content { flex-direction: column; }
+  .values-content img { width: 100%; }
+}
