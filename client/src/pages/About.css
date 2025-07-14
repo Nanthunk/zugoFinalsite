@@ -218,10 +218,137 @@ margin-left: 200px;
 }
 
 
-/* Responsive adjustments */
+/* ===== Responsive: Mobile & Tablet ===== */
+@media (max-width: 1024px) {
+  .company-info h2,
+  .company-info p {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
 @media (max-width: 768px) {
-  .about-hero h1 { font-size: 28px; }
-  .mission-vision { flex-direction: column; gap: 20px; }
-  .history img { width: 100%; }
-  .md-profile { flex-direction: column; text-align: center; }
+  .about-hero {
+    padding: 120px 15px 30px;
+    height: auto;
+  }
+
+  .about-hero h1 {
+    font-size: 28px;
+  }
+
+  .about-hero p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 15px;
+  }
+
+  .mission-vision h2 {
+    font-size: 20px;
+  }
+
+  .mission-vision p {
+    font-size: 14px;
+  }
+
+  .history {
+    gap: 16px;
+    padding: 40px 15px;
+  }
+
+  .history img {
+    width: 90%;
+  }
+
+  .company-info {
+    background-attachment: scroll; /* fixed background can look jumpy on mobile */
+    padding: 40px 15px;
+  }
+
+  .company-info h2,
+  .company-info p {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .company-info h2 {
+    font-size: 20px;
+  }
+
+  .company-info p {
+    font-size: 14px;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .workplace-info {
+    max-width: 100%;
+    padding: 30px 15px;
+  }
+
+  .workplace-info h2 {
+    font-size: 20px;
+  }
+
+  .workplace-info h4 {
+    font-size: 16px;
+  }
+
+  .workplace-info p {
+    font-size: 14px;
+  }
+
+  .about-cta {
+    padding: 40px 15px;
+  }
+
+  .about-cta h2 {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 24px;
+  }
+
+  .mission-vision h2 {
+    font-size: 18px;
+  }
+
+  .company-info h2 {
+    font-size: 18px;
+  }
+
+  .workplace-info h2 {
+    font-size: 18px;
+  }
+
+  .workplace-info h4 {
+    font-size: 15px;
+  }
+
+  .about-cta h2 {
+    font-size: 16px;
+  }
+
+  .cta-btn {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
 }
