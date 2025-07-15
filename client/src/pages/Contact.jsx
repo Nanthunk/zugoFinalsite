@@ -30,8 +30,10 @@ export default function Contact() {
       toast.error(<span><FaTimesCircle /> Please enter your email.</span>);
       return;
     }
+   
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      // const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch(" https://zugofinalsite.onrender.com/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData, email: tempEmail }),
