@@ -58,7 +58,7 @@ html {
 }
 
 .mission-vision h2 {
-  color: #007acc;
+  color: #003366;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -70,7 +70,7 @@ html {
 }
 
 .officepic {
-  color: #007acc;
+  color: #003366;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -111,7 +111,7 @@ html {
 }
 
 .company-info h2 {
-  color: #06bef1;
+  color: #003366;
   font-size: 24px;
   margin-bottom: 12px;
 margin-left: 200px;
@@ -140,13 +140,13 @@ margin-left: 200px;
 }
 
 .contact-info h2 {
-  color: #0390b3;
+  color: #003366;
   margin-bottom: 10px;
 }
 
 .contact-info a {
   display: inline-block;
-  color: #0390b3;
+  color: #003366;
   text-decoration: none;
   margin-top: 8px;
 }
@@ -165,7 +165,7 @@ margin-left: 200px;
 }
 
 .workplace-info h2 {
-  color: #007acc;
+  color: #003366;
   font-size: 24px;
   margin-bottom: 12px;
 }

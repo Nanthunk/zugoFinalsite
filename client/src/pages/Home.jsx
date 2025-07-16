@@ -5,7 +5,7 @@ import heroBg from "../assets/Zugo07.jpg"; // Background image for the hero sect
 import service1 from "../assets/marketing.jpg"; // Service images
 import service2 from "../assets/img2.jpg";
 import service3 from "../assets/img3.avif";
-import valuesImage from "../assets/img4.jpg";
+import valuesImage from "../assets/homebottom.jpg"; // Image for the values section
 
 const Home = () => {
   return (
@@ -26,7 +26,7 @@ const Home = () => {
 
       {/* Intro Section */}
       <section className="intro">
-        <h2>Welcome to Z U G O Private Limited</h2>
+        <h2>Welcome to ZUGO Private Limited</h2>
         <p>Together with our clients, we design innovative marketing strategies and engaging digital experiences that transform brands and spark lasting connections.</p>
       </section>
 
