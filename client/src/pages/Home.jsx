@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 // import heroVideo from "../assets/hero-video.mp4";
-import heroBg from "../assets/hero_section.webp"; // Background image for the hero section
+import heroBg from "../assets/Zugo07.jpg"; // Background image for the hero section
 import service1 from "../assets/marketing.jpg"; // Service images
 import service2 from "../assets/img2.jpg";
 import service3 from "../assets/img3.avif";

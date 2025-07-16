@@ -11,6 +11,7 @@ import Loader from "./components/Loader";
 import Marketing from "./pages/Marketing";
 import Development from "./pages/Development";
 import Designing from "./pages/Designing";
+import Whatsapp from "./components/Whatsapp";
 
 import "./App.css";
 
@@ -34,7 +35,7 @@ function AppContent() {
       {loading && <Loader />}
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
@@ -46,6 +47,7 @@ function AppContent() {
         
       </Routes>
       <Footer />
+      <Whatsapp />
     </>
   );
 }
