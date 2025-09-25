@@ -13,9 +13,7 @@ export default function Navbar() {
       <div className="nav-container container" >
 
         {/* Logo */}
-<div style={{marginLeft: 
-  "10px"
-}}>
+<div style={{marginLeft: "10px"}}>
         <Link to="/" className="nav-logo">
  <img src={logo} alt="Zugo Logo" className="logo-img" style={{ padding: 0}} />
 

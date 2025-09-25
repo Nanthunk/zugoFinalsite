@@ -33,6 +33,14 @@
     font-family: sans-serif;
 }
 
+.designing-details{
+  background-color: rgb(194, 218, 194);
+}
+
+.designing-contact{
+      background-color: #a9a2f9;
+    }
+
 .designing-details, .designing-ideas p {
     text-align: center;
     font-size: 1.2rem;

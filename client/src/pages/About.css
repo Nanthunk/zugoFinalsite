@@ -50,7 +50,7 @@ html {
   justify-content: center;
   gap: 40px;
   padding: 50px 20px;
-  background: #fff;
+  background: #deedf6;
 }
 
 .mission-vision div {
@@ -162,6 +162,7 @@ margin-left: 200px;
   padding: 40px 20px;
   text-align: center;
   color: #333;
+  background-color: #ecfbfce9;
 }
 
 .workplace-info h2 {

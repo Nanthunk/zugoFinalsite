@@ -25,6 +25,14 @@
     font-family: sans-serif;
 }
 
+.development-details{
+  background-color: rgb(194, 218, 194);
+}
+
+.development-contact{
+      background-color: #a9a2f9;
+    }
+
 .development-contact h1 {
     text-align: center;
     color: #003366;;

@@ -50,13 +50,16 @@
 
 .cta-btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 15px 30px;
   background: #007acc;
   color: white;
   text-decoration: none;
   font-size: 16px;
   border-radius: 4px;
   transition: background 0.3s;
+  margin: 20px auto 10px auto; /* top: 20px, sides auto, bottom: 10px */
+               /* Makes margin auto work for centering */
+  text-align: center;
 }
 
 .cta-btn:hover {
@@ -73,7 +76,7 @@
 .intro {
   text-align: center;
   padding: 60px 20px;
-  background: #fff;
+  background: #9fd1d6;
 }
 
 .intro h2 {
@@ -90,7 +93,7 @@
 
 /* ========== SERVICES SECTION ========== */
 .services {
-  background: #f9f9f9;
+  background: #ecfbfce9;
   padding: 60px 20px;
   text-align: center;
 }
@@ -140,10 +143,13 @@
 }
 
 
+
+
+
 /* ========== VALUES SECTION ========== */
 .values {
   padding: 60px 20px;
-  background: #fff;
+  background: #9fd1d6;
 }
 
 .values-content {
@@ -192,6 +198,8 @@
   font-size: 26px;
   margin-bottom: 20px;
 }
+
+
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {

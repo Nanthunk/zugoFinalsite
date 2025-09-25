@@ -140,7 +140,7 @@
 .contact-form {
   flex: 1;
   min-width: 320px;
-  background: #f9fafc;
+  background: #c5d5f3;
   padding: 25px 20px;
   border-radius: 8px;
 }
@@ -153,7 +153,7 @@
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   font-size: 14px;
   margin-bottom: 14px;
@@ -170,7 +170,7 @@
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   transition: background 0.3s;
 }
 
