@@ -153,7 +153,8 @@
 //   );
 // }
 
-import React from "react";
+
+import React, { useState } from "react";
 import "./About.css";
 import { motion } from "framer-motion"; // Import motion
 
@@ -164,6 +165,11 @@ import pic4 from "../assets/Zugo04.jpg";
 import pic6 from "../assets/Zugo06.jpg";
 import pic7 from "../assets/Zugo07.jpg";
 import about from "../assets/abtbg5.jpg";
+import new1 from "../assets/zugonew1.jpg";  
+import new2 from "../assets/zugonew2.jpg";
+import new3 from "../assets/zugonew3.jpg";
+import new4 from "../assets/zugonew4.jpg";
+import new5 from "../assets/zugonew5.jpg";
 
 // Animation variants for common elements
 const containerVariants = {
@@ -184,7 +190,41 @@ const itemVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
+const properties = [
+  {
+    id: 5,
+    img: new5,
+  },
+  {
+    id: 1,
+    img: new1,
+  },
+  {
+    id: 3,
+    img: new3,
+  },
+  {
+    id: 2,
+    img: new2,
+  },
+  
+  {
+    id: 4,
+    img: new4,
+  },
+  
+];
+
 export default function About() {
+   const [current, setCurrent] = useState(0);
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev === 0 ? properties.length - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev === properties.length - 1 ? 0 : prev + 1));
+  }; 
   return (
     <div className="about-page">
       {/* Hero / intro */}
@@ -278,6 +318,31 @@ export default function About() {
         <motion.img src={pic4} alt="Our Team" variants={itemVariants} whileHover={{ scale: 1.5 }} />
         <motion.img src={pic6} alt="Our Team" variants={itemVariants} whileHover={{ scale: 1.5 }} />
         <motion.img src={pic7} alt="Our Team" variants={itemVariants} whileHover={{ scale: 1.5 }} />
+      </motion.section>
+
+      <motion.section
+        className="slider-container"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+      > 
+
+        <div className="slider-container">
+  <button className="slider-btn prev" onClick={prevSlide}>‹</button>
+
+  <div className="slider-wrapper" style={{ transform: `translateX(-${current * 300}px)` }}>
+    {properties.map((property, index) => (
+      <div className="card" key={index}>
+        <img src={property.img} alt={property.title} />
+        
+      </div>
+    ))}
+  </div>
+
+  <button className="slider-btn next" onClick={nextSlide}>›</button>
+</div>
+
       </motion.section>
 
       <motion.section
