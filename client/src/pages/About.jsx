@@ -426,10 +426,8 @@ export default function About() {
             work culture, Zugo follows an onsite working policy designed to
             support productivity.
           </motion.p>
-          <br />
-          <motion.h4 variants={itemVariants}>Featured benefits</motion.h4>
-          <motion.p variants={itemVariants}>● Free Meals</motion.p>
-          <motion.p variants={itemVariants}>● Mental Health Benefits</motion.p>
+          
+          
         </motion.div>
       </motion.section>
 

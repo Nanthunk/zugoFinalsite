@@ -30,7 +30,7 @@ function AppContent() {
     return () => clearTimeout(timer);
   }, [location]);
 
-  return (
+  return ( 
     <>
       {loading && <Loader />}
       <Navbar />
